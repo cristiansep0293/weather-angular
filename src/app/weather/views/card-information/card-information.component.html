@@ -1,0 +1,11 @@
+<div class="container-all__card-information">
+  <weather-card-img [dark]="dark"></weather-card-img>
+  <weather-button-weather [celsius]="celsius" (changeTemperature)="changeTemperature($event)"></weather-button-weather>
+  <weather-temperature-grades [dark]="dark" [celsius]="celsius"></weather-temperature-grades>
+  <weather-card-img-weather></weather-card-img-weather>
+  <weather-conditions-weather [dark]="dark"></weather-conditions-weather>
+  <div class="weather-location-climate">
+    <weather-location-climate-weather [dark]="dark" [text]="location"></weather-location-climate-weather>
+    <weather-location-climate-weather [dark]="dark" [text]="weatherText"></weather-location-climate-weather>
+  </div>
+</div>

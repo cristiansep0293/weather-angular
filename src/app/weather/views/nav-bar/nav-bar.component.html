@@ -1,0 +1,5 @@
+<div class="nav-bar">
+  <h1>{{ title }}</h1>
+  <weather-search-box [dark]="dark" (loadingEmit)="isLoading($event)"></weather-search-box>
+  <shared-toggle-theme [dark]="dark" (darkTheme)="changeTheme($event)"></shared-toggle-theme>
+</div>

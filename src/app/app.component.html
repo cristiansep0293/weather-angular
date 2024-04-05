@@ -1,0 +1,17 @@
+<shared-loader
+  [dark]="dark"
+  *ngIf="loading else weatherInfo">
+</shared-loader>
+<ng-template #weatherInfo>
+  <weather-nav-bar
+    [title]="title"
+    [dark]="dark"
+    (darkTheme)="changeTheme($event)"
+    (loadingEmit)="isLoading($event)">
+  </weather-nav-bar>
+  <div [class]="dark ? 'container-all__background-dark' : 'container-all__background-light'">
+    <weather-card-information
+      [dark]="dark">
+    </weather-card-information>
+  </div>
+</ng-template>

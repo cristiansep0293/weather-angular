@@ -1,0 +1,30 @@
+.input-search-city-class {
+  width: 409px;
+  height: 38px;
+  box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.726);
+  border-radius: 10.9228px;
+  border: none;
+  padding: 12px 0px 12px 40px;
+  font-size: 15px;
+  outline: none;
+}
+.input-search-city__light-class {
+  background-color: #52b5e8;
+}
+.input-search-city__dark-class {
+  background-color: #201f3c;
+}
+.search-city {
+  position: relative;
+}
+.search-city input::placeholder,
+input,
+i {
+  color: #d5f3ff;
+  font-size: 15px;
+}
+.search-city i {
+  position: absolute;
+  margin-left: 15px;
+  top: 12px;
+}

@@ -1,0 +1,11 @@
+<div class="search-city">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input
+    type="text"
+    class="input-search-city-class"
+    [class]="dark ? 'input-search-city__dark-class' : 'input-search-city__light-class'"
+    placeholder="Search a city"
+    (keyup.enter)="searchCurrentWheterByCity()"
+    #txtCity
+  />
+</div>
